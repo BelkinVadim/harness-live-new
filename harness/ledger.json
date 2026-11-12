@@ -213,6 +213,38 @@
         }
       ],
       "base_sha": "fc60ef6baa12b4ce409c40bf80dd2bac8fdab7c4"
+    },
+    {
+      "id": "20261112T083459Z-b40b69",
+      "command": "level up",
+      "version": "1.0.0-rc.1",
+      "at": "2026-11-12T08:34:59Z",
+      "actor": "Vadim Belkin <belkinvadimka@gmail.com>",
+      "operations": [
+        {
+          "type": "replace-file",
+          "path": "harness.config.yaml",
+          "owner_class": "harness-data",
+          "before": "6b8a44f39676cedb6ee00d655739dd8b0cb2890faa96cd5a52270853fe62874d",
+          "after": "ad243446995e92277f45c7eed07744c16d7fc55fdc3b4c25c9b1a395e8d64341"
+        },
+        {
+          "type": "create-file",
+          "path": ".github/workflows/harness-ai-review-gate.yml",
+          "owner_class": "harness",
+          "before": null,
+          "after": "b2df12ee95c3f430c2c7ad31b02247b0ced5712d440a94135d2520324219dcd0",
+          "module": "ai-review-gate"
+        },
+        {
+          "type": "create-file",
+          "path": ".github/workflows/harness-exceptions.yml",
+          "owner_class": "harness",
+          "before": null,
+          "after": "356e509329693e71069bb471931d9180fea30e465fe70f7fff4a489047f0f1e5",
+          "module": "exceptions-workflow"
+        }
+      ]
     }
   ],
   "exceptions": [],

@@ -508,6 +508,22 @@
           "fragment": "d2fd499e20f1d859692a3679ad6eb16518abf7a322bbb092f65aa0b452810783"
         }
       ]
+    },
+    {
+      "id": "20261112T113258Z-b72383",
+      "command": "configure",
+      "version": "1.0.0-rc.1",
+      "at": "2026-11-12T11:32:58Z",
+      "actor": "Vadim Belkin <belkinvadimka@gmail.com>",
+      "operations": [
+        {
+          "type": "replace-file",
+          "path": "harness.config.yaml",
+          "owner_class": "harness-data",
+          "before": "ad243446995e92277f45c7eed07744c16d7fc55fdc3b4c25c9b1a395e8d64341",
+          "after": "058dab9c5ff647a6b0b81c84e487f2f7377edeff94a56893b7d58526877d657e"
+        }
+      ]
     }
   ],
   "exceptions": [

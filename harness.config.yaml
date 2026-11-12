@@ -32,6 +32,9 @@ review:
     credentials_env: CLAUDE_CODE_OAUTH_TOKEN
 sensitive_data:
   kinds: []
+checks:
+  types:
+    mode: gate
 verify:
   commands:
     - name: lint

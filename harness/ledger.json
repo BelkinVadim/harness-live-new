@@ -341,6 +341,39 @@
           "after": false
         }
       ]
+    },
+    {
+      "id": "20261112T110852Z-ccc659",
+      "command": "exceptions restore",
+      "version": "1.0.0-rc.1",
+      "at": "2026-11-12T11:08:52Z",
+      "actor": "harness-exceptions",
+      "operations": [
+        {
+          "type": "external",
+          "host": "github",
+          "kind": "required-context",
+          "address": "harness:harness-verify",
+          "before": false,
+          "after": true
+        },
+        {
+          "type": "external",
+          "host": "github",
+          "kind": "required-context",
+          "address": "harness:harness-ai-review-gate",
+          "before": false,
+          "after": true
+        }
+      ]
+    },
+    {
+      "id": "20261112T111027Z-638ef6",
+      "command": "exceptions close",
+      "version": "1.0.0-rc.1",
+      "at": "2026-11-12T11:10:27Z",
+      "actor": "Vadim Belkin <belkinvadimka@gmail.com>",
+      "operations": []
     }
   ],
   "exceptions": [
@@ -365,10 +398,11 @@
           "after": false
         }
       ],
-      "follow_up": null,
-      "restored_at": null,
-      "closed_at": null,
-      "issue": 7
+      "follow_up": "https://github.com/BelkinVadim/harness-live-new/pull/6",
+      "restored_at": "2026-11-12T11:08:52Z",
+      "closed_at": "2026-11-12T11:10:27Z",
+      "issue": 7,
+      "conflicts": []
     }
   ],
   "in_progress": null

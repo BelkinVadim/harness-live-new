@@ -1,6 +1,6 @@
 {
   "schema": 1,
-  "harness_version": "1.0.0-rc.1",
+  "harness_version": "1.0.0-rc.2",
   "entries": [
     {
       "id": "20261112T083137Z-5ac2b1",
@@ -522,6 +522,29 @@
           "owner_class": "harness-data",
           "before": "ad243446995e92277f45c7eed07744c16d7fc55fdc3b4c25c9b1a395e8d64341",
           "after": "058dab9c5ff647a6b0b81c84e487f2f7377edeff94a56893b7d58526877d657e"
+        }
+      ]
+    },
+    {
+      "id": "20261112T113557Z-4e3063",
+      "command": "upgrade",
+      "version": "1.0.0-rc.2",
+      "at": "2026-11-12T11:35:57Z",
+      "actor": "Vadim Belkin <belkinvadimka@gmail.com>",
+      "operations": [
+        {
+          "type": "replace-file",
+          "path": "harness.config.yaml",
+          "owner_class": "harness-data",
+          "before": "058dab9c5ff647a6b0b81c84e487f2f7377edeff94a56893b7d58526877d657e",
+          "after": "fb16520905c09457aa4f782f1a0de68bac772c04da09e49a4c34dffc361567d1"
+        },
+        {
+          "type": "replace-file",
+          "path": "harness/core/runtime.mjs",
+          "owner_class": "harness",
+          "before": "64432814b13a9734d7b179e1b1481c809b5f834c6260cb6a07ec40171af807a5",
+          "after": "b800ab1af800535cf905b267f45e5c248acd6e962eebd95fea4c0ce6111bb719"
         }
       ]
     }

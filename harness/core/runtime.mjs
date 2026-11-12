@@ -16639,7 +16639,7 @@ function isRecord(value) {
 }
 
 // src/core/version.ts
-var HARNESS_VERSION = "1.0.0-rc.2";
+var HARNESS_VERSION = "1.0.0-rc.1";
 
 // src/core/fs.ts
 import { randomBytes } from "crypto";

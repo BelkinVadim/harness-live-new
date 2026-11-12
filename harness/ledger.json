@@ -547,6 +547,29 @@
           "after": "b800ab1af800535cf905b267f45e5c248acd6e962eebd95fea4c0ce6111bb719"
         }
       ]
+    },
+    {
+      "id": "20261112T113747Z-5c218b",
+      "command": "upgrade-rollback",
+      "version": "1.0.0-rc.2",
+      "at": "2026-11-12T11:37:47Z",
+      "actor": "Vadim Belkin <belkinvadimka@gmail.com>",
+      "operations": [
+        {
+          "type": "replace-file",
+          "path": "harness/core/runtime.mjs",
+          "owner_class": "harness",
+          "before": "b800ab1af800535cf905b267f45e5c248acd6e962eebd95fea4c0ce6111bb719",
+          "after": "64432814b13a9734d7b179e1b1481c809b5f834c6260cb6a07ec40171af807a5"
+        },
+        {
+          "type": "replace-file",
+          "path": "harness.config.yaml",
+          "owner_class": "harness-data",
+          "before": "fb16520905c09457aa4f782f1a0de68bac772c04da09e49a4c34dffc361567d1",
+          "after": "058dab9c5ff647a6b0b81c84e487f2f7377edeff94a56893b7d58526877d657e"
+        }
+      ]
     }
   ],
   "exceptions": [

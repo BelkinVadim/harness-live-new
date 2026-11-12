@@ -1,0 +1,56 @@
+# Конфиг harness-kit. Формат — src/schemas/config.json пакета harness-kit.
+# Меняйте через `harness-kit configure`; ручные правки проверяет `harness-kit doctor`.
+
+schema: 1
+version: 1.0.0-rc.1
+profile: solo-web
+level: 2
+stack:
+  name: web-ts
+  options:
+    package_manager: pnpm
+agents:
+  - claude-code
+  - codex
+team_size: 1
+hosting:
+  host: github
+  ci: github-actions
+  default_branch: main
+review:
+  reviewer: harness-ci
+  self_check:
+    runner: claude-session
+    auth: session
+  pr:
+    runner: claude-cli
+    auth: subscription-token
+    credentials_env: CLAUDE_CODE_OAUTH_TOKEN
+  nightly:
+    runner: claude-cli
+    auth: subscription-token
+    credentials_env: CLAUDE_CODE_OAUTH_TOKEN
+sensitive_data:
+  kinds: []
+checks:
+  types:
+    mode: gate
+verify:
+  commands:
+    - name: lint
+      kind: lint
+      command: node harness/core/runtime.mjs stack lint
+      parser: violations-json
+    - name: types
+      kind: types
+      command: node_modules/.bin/tsc --noEmit --pretty false
+      parser: tsc
+    - name: structural
+      kind: structural
+      command: node harness/core/runtime.mjs stack boundaries
+      parser: violations-json
+    - name: tests
+      kind: tests
+      command: pnpm run test
+break_glass:
+  default_ttl_hours: 48

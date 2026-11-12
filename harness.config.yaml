@@ -2,7 +2,7 @@
 # Меняйте через `harness-kit configure`; ручные правки проверяет `harness-kit doctor`.
 
 schema: 1
-version: 1.0.0-rc.1
+version: 1.0.0-rc.2
 profile: solo-web
 level: 2
 stack:

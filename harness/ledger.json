@@ -447,6 +447,23 @@
           }
         }
       ]
+    },
+    {
+      "id": "20261112T112237Z-373ce2",
+      "command": "disable",
+      "version": "1.0.0-rc.1",
+      "at": "2026-11-12T11:22:37Z",
+      "actor": "Vadim Belkin <belkinvadimka@gmail.com>",
+      "operations": [
+        {
+          "type": "replace-file",
+          "path": "harness.config.yaml",
+          "owner_class": "harness-data",
+          "before": "ad243446995e92277f45c7eed07744c16d7fc55fdc3b4c25c9b1a395e8d64341",
+          "after": "72bda06305a9bbbef34069d6f44c9e18f90ae532cab729653a7ebb33d654feb8",
+          "module": "hooks.post-edit-lint"
+        }
+      ]
     }
   ],
   "exceptions": [

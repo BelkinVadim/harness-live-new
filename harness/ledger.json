@@ -366,6 +366,14 @@
           "after": true
         }
       ]
+    },
+    {
+      "id": "20261112T111027Z-638ef6",
+      "command": "exceptions close",
+      "version": "1.0.0-rc.1",
+      "at": "2026-11-12T11:10:27Z",
+      "actor": "Vadim Belkin <belkinvadimka@gmail.com>",
+      "operations": []
     }
   ],
   "exceptions": [
@@ -390,9 +398,9 @@
           "after": false
         }
       ],
-      "follow_up": null,
+      "follow_up": "https://github.com/BelkinVadim/harness-live-new/pull/6",
       "restored_at": "2026-11-12T11:08:52Z",
-      "closed_at": null,
+      "closed_at": "2026-11-12T11:10:27Z",
       "issue": 7,
       "conflicts": []
     }

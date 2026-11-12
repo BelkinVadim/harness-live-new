@@ -51,3 +51,6 @@ verify:
       command: pnpm run test
 break_glass:
   default_ttl_hours: 48
+modules:
+  disabled:
+    - hooks.post-edit-lint

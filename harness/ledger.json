@@ -481,6 +481,33 @@
           "module": "hooks.post-edit-lint"
         }
       ]
+    },
+    {
+      "id": "20261112T113137Z-46c4eb",
+      "command": "sync",
+      "version": "1.0.0-rc.1",
+      "at": "2026-11-12T11:31:37Z",
+      "actor": "Vadim Belkin <belkinvadimka@gmail.com>",
+      "operations": [
+        {
+          "type": "block",
+          "path": "AGENTS.md",
+          "owner_class": "shared",
+          "before": "8edd8ff7d52edfaa11e3e9491814ea1f1dc233e2a66432de9fb5e19d5b65f059",
+          "after": "90f34c681e8883ce9fe2403a5b0cd57c55b652e3ddf3ce826393c13db625c6e1",
+          "id": "code-review-rules",
+          "fragment": "861d7e4d976cea7708ca27b9ee4aaccc9c57ea5a71465259c81e5695b6e37fb0"
+        },
+        {
+          "type": "block",
+          "path": "src/AGENTS.md",
+          "owner_class": "shared",
+          "before": null,
+          "after": "949038473d6811d9b974af12bac32819473b18be33edfdbd93381d1f197f2581",
+          "id": "code-review-rules",
+          "fragment": "d2fd499e20f1d859692a3679ad6eb16518abf7a322bbb092f65aa0b452810783"
+        }
+      ]
     }
   ],
   "exceptions": [

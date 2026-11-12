@@ -316,8 +316,60 @@
           }
         }
       ]
+    },
+    {
+      "id": "20261112T090150Z-74fde4",
+      "command": "break-glass",
+      "version": "1.0.0-rc.1",
+      "at": "2026-11-12T09:01:50Z",
+      "actor": "Vadim Belkin <belkinvadimka@gmail.com>",
+      "operations": [
+        {
+          "type": "external",
+          "host": "github",
+          "kind": "required-context",
+          "address": "harness:harness-verify",
+          "before": true,
+          "after": false
+        },
+        {
+          "type": "external",
+          "host": "github",
+          "kind": "required-context",
+          "address": "harness:harness-ai-review-gate",
+          "before": true,
+          "after": false
+        }
+      ]
     }
   ],
-  "exceptions": [],
+  "exceptions": [
+    {
+      "id": "20261112T090150Z-74fde4",
+      "host": "github",
+      "reason": "L2: проверка обхода",
+      "actor": "Vadim Belkin <belkinvadimka@gmail.com>",
+      "created_at": "2026-11-12T09:01:50Z",
+      "expires_at": "2026-11-12T10:01:50Z",
+      "changes": [
+        {
+          "kind": "required-context",
+          "address": "harness:harness-verify",
+          "before": true,
+          "after": false
+        },
+        {
+          "kind": "required-context",
+          "address": "harness:harness-ai-review-gate",
+          "before": true,
+          "after": false
+        }
+      ],
+      "follow_up": null,
+      "restored_at": null,
+      "closed_at": null,
+      "issue": 7
+    }
+  ],
   "in_progress": null
 }
